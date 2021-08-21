@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+message Echo {
+  string id = 1;
+  int64 type = 2;
+
+  oneof element {
+    string text = 16;
+    double numeric = 17;
+  }
+}
